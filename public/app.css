@@ -1,0 +1,352 @@
+@media (max-width: 1200px) {
+	p {
+		font-size: 12px;
+	}
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+} 
+.content {
+	margin-bottom: 150px;
+}
+
+.navbar.scrolled {
+    background: rgb(255,255,255);
+    transition: background 500ms;
+}
+
+.margin {
+	margin-top: 46px;
+}
+
+h2 {
+	font-family: 'Sacramento', cursive;
+	color: #3C99C4;
+}
+
+span .h2 {
+	text-align: right;
+}
+
+p {
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: black;
+}
+video {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+* {
+	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.container {
+	position: relative;
+}
+
+.container .card:before {
+	background-color: #232323;
+	clip-path: circle(150px at 80% 20%);
+	content: '';
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	transition: clip-path 0.5s ease-in-out;
+	width: 100%;
+}
+.container .card {
+	position: relative;
+	width: 300px;
+	height: 600px;
+	background-color: #232323;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+
+.container .card .img-box {
+	height: 220px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: top 0.5s ease,
+							transform 0.5s ease;
+	width: 100%;
+	z-index: 1;
+}
+
+.container .card:hover .img-box {
+	top: 0%;
+	transform: translateY(0%);
+}
+
+.container .card .img-box img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotateY(0deg) rotateZ(0deg);
+	width: 270px;
+}
+
+.container .card .content-box {
+	bottom: 0;
+	height: 100px;
+	position: absolute;
+	text-align: center;
+	transition: height 1s ease;
+	width: 100%;
+	z-index: 1;
+}
+
+.container .card:hover .content-box,
+.container .card:focus .content-box,
+.container .card:active .content-box {
+	height: 210px;
+}
+
+.container .card .content-box h2 {
+	color: #ffffff;
+	font-weight: 600;
+	letter-spacing: 1px;
+	position: relative;
+	margin-top: 20%;
+}
+
+.container .card .content-box .size,
+.container .card .content-box .color {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	opacity: 0;
+	padding: 8px 20px;
+	transition: opacity 0.5s ease;
+	visibility: hidden;
+}
+
+.container .card:hover .content-box .size,
+.container .card:focus .content-box .size,
+.container .card:active .content-box .size {
+	opacity: 1;
+	transition-delay: 0.5s;
+	visibility: visible;
+}
+
+.container .card:hover .content-box .color,
+.container .card:focus .content-box .color,
+.container .card:active .content-box .color {
+	opacity: 1;
+	transition-delay: 0.6s;
+	visibility: visible;
+}
+
+.container .card .content-box .size h3,
+.container .card .content-box .color h3 {
+	color: #ffffff;
+	font: 300 14px 'Poppins', italic;
+	letter-spacing: 2px;
+	margin-right: 10px;
+	text-transform: uppercase;
+}
+
+.container .card .content-box .size span {
+	background-color: #ffffff;
+	border-radius: 4px;
+	color: #111111;
+	cursor: pointer;
+	display: inline-block;
+	font: 600 14px 'Poppins', italic;
+	height: 26px;
+	line-height: 26px;
+	margin: 0 5px;
+	text-align: center;
+	transition: background-color 0.5s ease;
+	width: 26px;
+}
+
+.container .card .content-box .size span:hover,
+.container .card .content-box .size span:focus,
+.container .card .content-box .size span:active {
+	background-color: #9bdc28;
+}
+
+.container .card .content-box .color span {
+	border-radius: 50%;
+	cursor: pointer;
+	height: 20px;
+	margin: 0 5px;
+	width: 20px;
+}
+
+.container .card .content-box .color span:nth-child(2) {
+	background-color: #9bdc28;
+}
+
+.container .card .content-box .color span:nth-child(3) {
+	background-color: #0ea9f4;
+}
+
+.container .card .content-box .color span:nth-child(4) {
+	background-color: #e91e63;
+}
+
+.container .card .content-box a {
+	background-color: #ffffff;
+	border-radius: 4px;
+	color: #111111;
+	display: inline-block;
+	font-weight: 600;
+	margin-top: 10px;
+	opacity: 0;
+	padding: 10px 20px;
+	text-decoration: none;
+	transform: translateY(50px);
+	transition: opacity 0.5s ease,
+							transform 0.5s ease;
+}
+
+.container .card:hover .content-box a {
+	opacity: 1;
+	transform: translateY(0);
+	transition-delay: 0.75s;
+}
+
+.card {
+	margin-bottom: 100px;
+	margin-top: 15px;
+}
+.our-team {
+  padding: 30px 0 40px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #232323;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #232323;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #232323;
+  text-transform: capitalize;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #232323;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #1369ce;
+  background-color: #232323;
+}
+
+.mc h1 {
+		font-family: 'Sacramento', cursive;
+	color: #232323;
+	text-align: center;
+	margin-top: 200px;
+}
+
+.lc h1 {
+			font-family: 'Sacramento', cursive;
+	color: #232323;
+	text-align: center;
+	margin-top: 50px;
+
+}
+
+.about #ab {
+	background-color: #232323;
+}
